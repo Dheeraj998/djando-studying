@@ -10,3 +10,8 @@ from django.shortcuts import render
 
 def demo(request):
   return render(request,'index.html')
+#multiple views
+def about(request):
+  return render(request,'about.html')  
+def profile(request):
+  return HttpResponse('profile')  
